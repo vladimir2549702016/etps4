@@ -112,17 +112,9 @@
 		EB9C84872AE4D78F00082030 /* free */ = {
 			isa = PBXGroup;
 			children = (
-				EB9C84882AE4D78F00082030 /* freeApp.swift */,
-				EB9C848A2AE4D78F00082030 /* ContentView.swift */,
-				EB9C84B22AE4E33900082030 /* RegistroView.swift */,
-				EB77A27B2AEDFAEE00028A9A /* HomeclienteView.swift */,
-				EB77A27D2AEDFB8400028A9A /* PreciosclienteView.swift */,
-				EB77A27F2AEDFBA000028A9A /* OfertasclienteView.swift */,
-				EB77A2812AEDFBB800028A9A /* SucursalesclienteView.swift */,
-				EB77A2832AEDFBDE00028A9A /* HomedistribuidorView.swift */,
-				EB77A2852AEDFC1D00028A9A /* OfertasdistribuidorView.swift */,
-				EB77A2872AEDFC3A00028A9A /* PreciosdistribuidorView.swift */,
-				EB77A2892AEDFC5A00028A9A /* UbicaciondistribuidorView.swift */,
+				EBF838222AF9B605003A52B9 /* Ingreso */,
+				EBF838202AF9B5D7003A52B9 /* Cliente */,
+				EBF838212AF9B5EC003A52B9 /* Distribuidor */,
 				EB9C848C2AE4D79100082030 /* Assets.xcassets */,
 				EB9C848E2AE4D79100082030 /* Preview Content */,
 			);
@@ -152,6 +144,38 @@
 				EB9C84A52AE4D79100082030 /* freeUITestsLaunchTests.swift */,
 			);
 			path = freeUITests;
+			sourceTree = "<group>";
+		};
+		EBF838202AF9B5D7003A52B9 /* Cliente */ = {
+			isa = PBXGroup;
+			children = (
+				EB77A2812AEDFBB800028A9A /* SucursalesclienteView.swift */,
+				EB77A27F2AEDFBA000028A9A /* OfertasclienteView.swift */,
+				EB77A27D2AEDFB8400028A9A /* PreciosclienteView.swift */,
+				EB77A27B2AEDFAEE00028A9A /* HomeclienteView.swift */,
+			);
+			path = Cliente;
+			sourceTree = "<group>";
+		};
+		EBF838212AF9B5EC003A52B9 /* Distribuidor */ = {
+			isa = PBXGroup;
+			children = (
+				EB77A2832AEDFBDE00028A9A /* HomedistribuidorView.swift */,
+				EB77A2892AEDFC5A00028A9A /* UbicaciondistribuidorView.swift */,
+				EB77A2872AEDFC3A00028A9A /* PreciosdistribuidorView.swift */,
+				EB77A2852AEDFC1D00028A9A /* OfertasdistribuidorView.swift */,
+			);
+			path = Distribuidor;
+			sourceTree = "<group>";
+		};
+		EBF838222AF9B605003A52B9 /* Ingreso */ = {
+			isa = PBXGroup;
+			children = (
+				EB9C84B22AE4E33900082030 /* RegistroView.swift */,
+				EB9C848A2AE4D78F00082030 /* ContentView.swift */,
+				EB9C84882AE4D78F00082030 /* freeApp.swift */,
+			);
+			path = Ingreso;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
