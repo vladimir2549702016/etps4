@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB36304D2B081F0B009D199F /* gasetps4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36304C2B081F0B009D199F /* gasetps4App.swift */; };
+		EB36304F2B081F0B009D199F /* HomeClienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36304E2B081F0B009D199F /* HomeClienteView.swift */; };
+		EB3630512B081F0E009D199F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3630502B081F0E009D199F /* Assets.xcassets */; };
+		EB3630542B081F0E009D199F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3630532B081F0E009D199F /* Preview Assets.xcassets */; };
+		EB36305E2B081F0E009D199F /* gasetps4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36305D2B081F0E009D199F /* gasetps4Tests.swift */; };
+		EB3630682B081F0E009D199F /* gasetps4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630672B081F0E009D199F /* gasetps4UITests.swift */; };
+		EB36306A2B081F0E009D199F /* gasetps4UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630692B081F0E009D199F /* gasetps4UITestsLaunchTests.swift */; };
+		EB3630772B082259009D199F /* SucursalesclienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630762B082259009D199F /* SucursalesclienteView.swift */; };
+		EB3630792B082279009D199F /* OfertasclienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630782B082279009D199F /* OfertasclienteView.swift */; };
+		EB36307B2B08229A009D199F /* PreciosclienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36307A2B08229A009D199F /* PreciosclienteView.swift */; };
+		EB36307D2B0826FF009D199F /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36307C2B0826FF009D199F /* RegistroView.swift */; };
+		EB36307F2B0827C2009D199F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36307E2B0827C2009D199F /* LoginView.swift */; };
+		EB3630812B0829F0009D199F /* HomeDistribuidorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630802B0829F0009D199F /* HomeDistribuidorView.swift */; };
+		EB3630832B082A09009D199F /* SucursalDistribuidorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630822B082A09009D199F /* SucursalDistribuidorView.swift */; };
+		EB3630852B082A38009D199F /* PrecioDistribuidorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630842B082A38009D199F /* PrecioDistribuidorView.swift */; };
+		EB3630872B082A57009D199F /* OfertaDistribuidorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3630862B082A57009D199F /* OfertaDistribuidorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB36305A2B081F0E009D199F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3630412B081F0B009D199F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3630482B081F0B009D199F;
+			remoteInfo = gasetps4;
+		};
+		EB3630642B081F0E009D199F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB3630412B081F0B009D199F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB3630482B081F0B009D199F;
+			remoteInfo = gasetps4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB3630492B081F0B009D199F /* gasetps4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gasetps4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB36304C2B081F0B009D199F /* gasetps4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasetps4App.swift; sourceTree = "<group>"; };
+		EB36304E2B081F0B009D199F /* HomeClienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClienteView.swift; sourceTree = "<group>"; };
+		EB3630502B081F0E009D199F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB3630532B081F0E009D199F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB3630592B081F0E009D199F /* gasetps4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gasetps4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB36305D2B081F0E009D199F /* gasetps4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasetps4Tests.swift; sourceTree = "<group>"; };
+		EB3630632B081F0E009D199F /* gasetps4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gasetps4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3630672B081F0E009D199F /* gasetps4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasetps4UITests.swift; sourceTree = "<group>"; };
+		EB3630692B081F0E009D199F /* gasetps4UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gasetps4UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB3630762B082259009D199F /* SucursalesclienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SucursalesclienteView.swift; sourceTree = "<group>"; };
+		EB3630782B082279009D199F /* OfertasclienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertasclienteView.swift; sourceTree = "<group>"; };
+		EB36307A2B08229A009D199F /* PreciosclienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreciosclienteView.swift; sourceTree = "<group>"; };
+		EB36307C2B0826FF009D199F /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
+		EB36307E2B0827C2009D199F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EB3630802B0829F0009D199F /* HomeDistribuidorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDistribuidorView.swift; sourceTree = "<group>"; };
+		EB3630822B082A09009D199F /* SucursalDistribuidorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SucursalDistribuidorView.swift; sourceTree = "<group>"; };
+		EB3630842B082A38009D199F /* PrecioDistribuidorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecioDistribuidorView.swift; sourceTree = "<group>"; };
+		EB3630862B082A57009D199F /* OfertaDistribuidorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertaDistribuidorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB3630462B081F0B009D199F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3630562B081F0E009D199F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3630602B081F0E009D199F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB3630402B081F0B009D199F = {
+			isa = PBXGroup;
+			children = (
+				EB36304B2B081F0B009D199F /* gasetps4 */,
+				EB36305C2B081F0E009D199F /* gasetps4Tests */,
+				EB3630662B081F0E009D199F /* gasetps4UITests */,
+				EB36304A2B081F0B009D199F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB36304A2B081F0B009D199F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB3630492B081F0B009D199F /* gasetps4.app */,
+				EB3630592B081F0E009D199F /* gasetps4Tests.xctest */,
+				EB3630632B081F0E009D199F /* gasetps4UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB36304B2B081F0B009D199F /* gasetps4 */ = {
+			isa = PBXGroup;
+			children = (
+				EB36304C2B081F0B009D199F /* gasetps4App.swift */,
+				EB3630882B083B21009D199F /* Ingreso */,
+				EB3630892B083B2F009D199F /* Cliente */,
+				EB36308A2B083B40009D199F /* Distribuidor */,
+				EB3630502B081F0E009D199F /* Assets.xcassets */,
+				EB3630522B081F0E009D199F /* Preview Content */,
+			);
+			path = gasetps4;
+			sourceTree = "<group>";
+		};
+		EB3630522B081F0E009D199F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EB3630532B081F0E009D199F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB36305C2B081F0E009D199F /* gasetps4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EB36305D2B081F0E009D199F /* gasetps4Tests.swift */,
+			);
+			path = gasetps4Tests;
+			sourceTree = "<group>";
+		};
+		EB3630662B081F0E009D199F /* gasetps4UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB3630672B081F0E009D199F /* gasetps4UITests.swift */,
+				EB3630692B081F0E009D199F /* gasetps4UITestsLaunchTests.swift */,
+			);
+			path = gasetps4UITests;
+			sourceTree = "<group>";
+		};
+		EB3630882B083B21009D199F /* Ingreso */ = {
+			isa = PBXGroup;
+			children = (
+				EB36307E2B0827C2009D199F /* LoginView.swift */,
+				EB36307C2B0826FF009D199F /* RegistroView.swift */,
+			);
+			path = Ingreso;
+			sourceTree = "<group>";
+		};
+		EB3630892B083B2F009D199F /* Cliente */ = {
+			isa = PBXGroup;
+			children = (
+				EB36304E2B081F0B009D199F /* HomeClienteView.swift */,
+				EB36307A2B08229A009D199F /* PreciosclienteView.swift */,
+				EB3630762B082259009D199F /* SucursalesclienteView.swift */,
+				EB3630782B082279009D199F /* OfertasclienteView.swift */,
+			);
+			path = Cliente;
+			sourceTree = "<group>";
+		};
+		EB36308A2B083B40009D199F /* Distribuidor */ = {
+			isa = PBXGroup;
+			children = (
+				EB3630802B0829F0009D199F /* HomeDistribuidorView.swift */,
+				EB3630842B082A38009D199F /* PrecioDistribuidorView.swift */,
+				EB3630822B082A09009D199F /* SucursalDistribuidorView.swift */,
+				EB3630862B082A57009D199F /* OfertaDistribuidorView.swift */,
+			);
+			path = Distribuidor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB3630482B081F0B009D199F /* gasetps4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB36306D2B081F0E009D199F /* Build configuration list for PBXNativeTarget "gasetps4" */;
+			buildPhases = (
+				EB3630452B081F0B009D199F /* Sources */,
+				EB3630462B081F0B009D199F /* Frameworks */,
+				EB3630472B081F0B009D199F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gasetps4;
+			productName = gasetps4;
+			productReference = EB3630492B081F0B009D199F /* gasetps4.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB3630582B081F0E009D199F /* gasetps4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3630702B081F0E009D199F /* Build configuration list for PBXNativeTarget "gasetps4Tests" */;
+			buildPhases = (
+				EB3630552B081F0E009D199F /* Sources */,
+				EB3630562B081F0E009D199F /* Frameworks */,
+				EB3630572B081F0E009D199F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB36305B2B081F0E009D199F /* PBXTargetDependency */,
+			);
+			name = gasetps4Tests;
+			productName = gasetps4Tests;
+			productReference = EB3630592B081F0E009D199F /* gasetps4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB3630622B081F0E009D199F /* gasetps4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB3630732B081F0E009D199F /* Build configuration list for PBXNativeTarget "gasetps4UITests" */;
+			buildPhases = (
+				EB36305F2B081F0E009D199F /* Sources */,
+				EB3630602B081F0E009D199F /* Frameworks */,
+				EB3630612B081F0E009D199F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB3630652B081F0E009D199F /* PBXTargetDependency */,
+			);
+			name = gasetps4UITests;
+			productName = gasetps4UITests;
+			productReference = EB3630632B081F0E009D199F /* gasetps4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB3630412B081F0B009D199F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EB3630482B081F0B009D199F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EB3630582B081F0E009D199F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EB3630482B081F0B009D199F;
+					};
+					EB3630622B081F0E009D199F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EB3630482B081F0B009D199F;
+					};
+				};
+			};
+			buildConfigurationList = EB3630442B081F0B009D199F /* Build configuration list for PBXProject "gasetps4" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB3630402B081F0B009D199F;
+			productRefGroup = EB36304A2B081F0B009D199F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB3630482B081F0B009D199F /* gasetps4 */,
+				EB3630582B081F0E009D199F /* gasetps4Tests */,
+				EB3630622B081F0E009D199F /* gasetps4UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB3630472B081F0B009D199F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB3630542B081F0E009D199F /* Preview Assets.xcassets in Resources */,
+				EB3630512B081F0E009D199F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3630572B081F0E009D199F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3630612B081F0E009D199F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB3630452B081F0B009D199F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB36307B2B08229A009D199F /* PreciosclienteView.swift in Sources */,
+				EB36307F2B0827C2009D199F /* LoginView.swift in Sources */,
+				EB3630772B082259009D199F /* SucursalesclienteView.swift in Sources */,
+				EB36304F2B081F0B009D199F /* HomeClienteView.swift in Sources */,
+				EB3630872B082A57009D199F /* OfertaDistribuidorView.swift in Sources */,
+				EB36307D2B0826FF009D199F /* RegistroView.swift in Sources */,
+				EB3630812B0829F0009D199F /* HomeDistribuidorView.swift in Sources */,
+				EB3630852B082A38009D199F /* PrecioDistribuidorView.swift in Sources */,
+				EB3630792B082279009D199F /* OfertasclienteView.swift in Sources */,
+				EB36304D2B081F0B009D199F /* gasetps4App.swift in Sources */,
+				EB3630832B082A09009D199F /* SucursalDistribuidorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3630552B081F0E009D199F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB36305E2B081F0E009D199F /* gasetps4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB36305F2B081F0E009D199F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB36306A2B081F0E009D199F /* gasetps4UITestsLaunchTests.swift in Sources */,
+				EB3630682B081F0E009D199F /* gasetps4UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB36305B2B081F0E009D199F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3630482B081F0B009D199F /* gasetps4 */;
+			targetProxy = EB36305A2B081F0E009D199F /* PBXContainerItemProxy */;
+		};
+		EB3630652B081F0E009D199F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB3630482B081F0B009D199F /* gasetps4 */;
+			targetProxy = EB3630642B081F0E009D199F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB36306B2B081F0E009D199F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB36306C2B081F0E009D199F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB36306E2B081F0E009D199F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gasetps4/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gasetps4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB36306F2B081F0E009D199F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"gasetps4/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gasetps4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB3630712B081F0E009D199F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlad.gasetps4.gasetps4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gasetps4.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gasetps4";
+			};
+			name = Debug;
+		};
+		EB3630722B081F0E009D199F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlad.gasetps4.gasetps4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gasetps4.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/gasetps4";
+			};
+			name = Release;
+		};
+		EB3630742B081F0E009D199F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlad.gasetps4.gasetps4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gasetps4;
+			};
+			name = Debug;
+		};
+		EB3630752B081F0E009D199F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vlad.gasetps4.gasetps4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gasetps4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB3630442B081F0B009D199F /* Build configuration list for PBXProject "gasetps4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB36306B2B081F0E009D199F /* Debug */,
+				EB36306C2B081F0E009D199F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB36306D2B081F0E009D199F /* Build configuration list for PBXNativeTarget "gasetps4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB36306E2B081F0E009D199F /* Debug */,
+				EB36306F2B081F0E009D199F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3630702B081F0E009D199F /* Build configuration list for PBXNativeTarget "gasetps4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3630712B081F0E009D199F /* Debug */,
+				EB3630722B081F0E009D199F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB3630732B081F0E009D199F /* Build configuration list for PBXNativeTarget "gasetps4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3630742B081F0E009D199F /* Debug */,
+				EB3630752B081F0E009D199F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB3630412B081F0B009D199F /* Project object */;
+}
