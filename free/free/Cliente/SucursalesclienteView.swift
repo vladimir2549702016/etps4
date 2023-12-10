@@ -16,11 +16,9 @@ struct Sucursal: Identifiable {
 struct SucursalesClienteView: View {
     // Simulación de datos de sucursales, reemplaza con tus datos reales de la base de datos
     let sucursales: [Sucursal] = [
-        Sucursal(id: 1, nombre: "Sucursal 1", direccion: "Calle 1, Ciudad 1"),
-        Sucursal(id: 2, nombre: "Sucursal 2", direccion: "Calle 2, Ciudad 2"),
-        Sucursal(id: 3, nombre: "Sucursal 3", direccion: "Calle 3, Ciudad 3"),
-        Sucursal(id: 4, nombre: "Sucursal 4", direccion: "Calle 4, Ciudad 4"),
-        Sucursal(id: 5, nombre: "Sucursal 5", direccion: "Calle 5, Ciudad 5"),
+        Sucursal(id: 1, nombre: "Texaco", direccion: "Sobre 1 calle y 53 avenida"),
+        Sucursal(id: 2, nombre: "Uno", direccion: "Sobre bulevar Los Heroes contiguo a 1 calle"),
+        Sucursal(id: 3, nombre: "Uno", direccion: "Sobre Juan Pablo ii y 51 avenida"),
     ]
     
     var body: some View {

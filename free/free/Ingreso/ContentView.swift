@@ -4,72 +4,72 @@
 //
 //  Created by Owner on 21/10/23.
 //
-
 import SwiftUI
 
 struct ContentView: View {
-    @State private var username = ""
-    @State private var password = ""
-    @State private var isLoggedIn = false
+    @State private var showContinueButton = false
+    @State private var goToHome = false
 
     var body: some View {
-        NavigationView {
-            if isLoggedIn {
-                // Vista de inicio de sesión exitosa para el distribuidor o el cliente
-                if username == "Distribuidor" {
-                    HomedistribuidorView()
-                } else if username == "Cliente" {
-                    HomeClienteView()
-                }
-            } else {
-                ZStack {
-                    Color.black
-                        .edgesIgnoringSafeArea(.all)
-                    VStack {
-                        Image("mygas")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .padding(.top, 0)
-                            .frame(width: 200, height: 200)
-                            .clipShape(Circle())
-                        
-                        Text("Iniciar Sesión")
-                            .font(.title)
-                            .padding()
-                            .colorInvert()
-                        TextField("Nombre de usuario", text: $username)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .padding()
-                        
-                        SecureField("Contraseña", text: $password)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .padding()
+        ZStack {
+            Color.black.edgesIgnoringSafeArea(.all)
 
-                        Button(action: {
-                            // Verifica el inicio de sesión y establece la variable isLoggedIn en verdadero
-                            if username == password {
-                                isLoggedIn = true
-                            }
-                        }) {
-                            Text("Iniciar Sesión")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .frame(minWidth: 0, maxWidth: .infinity)
-                                .padding()
-                                .background(.blue)
-                                .cornerRadius(10)
-                        }
-                        .padding()
+ /*           Image("mygas")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 250, height: 250)
+                .clipShape(Circle())
+                .scaleEffect(showContinueButton ? 1.2 : 1.0) // Efecto de escala
+                .opacity(0.3)
+                .animation(.easeInOut(duration: 4.0)) // Agregar animación a la escala
+   */
 
-                        NavigationLink(destination: RegistroView()) {
-                            Text("Registrarse")
-                                .font(.headline)
-                                .foregroundColor(.blue)
+            VStack {
+                Spacer()
+
+                if showContinueButton {
+                    Button(action: {
+                        withAnimation {
+                            goToHome = true
                         }
+                    }) {
+                        Text("Bienvenido!")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .padding()
+                            .background(Color.red)
+                            .cornerRadius(10)
+                            .padding(.bottom, 40) // Ajustar la posición vertical del botón
                     }
+                    .transition(.offset(y: 100)) // Ajustar la posición vertical de la transición del botón
+                    .animation(
+                        .easeIn(duration: 1.0))
                 }
+
+                Spacer()
             }
         }
+        .onAppear {
+            // Esto activará la animación cuando la vista aparezca
+            withAnimation {
+                showContinueButton = true
+            }
+        }
+        .background(
+            NavigationLink(destination: HomeclienteView(), isActive: $goToHome) {
+                EmptyView()
+            }
+            .hidden()
+        )
+    }
+}
+
+struct HomeclienteView: View {
+    var body: some View {
+        Text("¡Bienvenido a HomeClienteView!")
+            .font(.title)
+            .foregroundColor(.black)
     }
 }
 
@@ -78,5 +78,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-

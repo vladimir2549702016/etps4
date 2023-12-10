@@ -7,13 +7,20 @@
 import SwiftUI
 
 struct OfertasDistribuidorView: View {
-    @State private var opcionesSeleccionadas: [Opcion] = [
-        Opcion(nombre: "Combustible al Costo", seleccionada: false),
-        Opcion(nombre: "Acumulación de Puntos", seleccionada: false),
-        Opcion(nombre: "Descuento con Tarjeta de Crédito", seleccionada: false),
-        Opcion(nombre: "Bomba Cash", seleccionada: false),
-        Opcion(nombre: "Promoción Navideña", seleccionada: false)
-    ]
+    @State private var oferta: String = ""
+    @State private var descripcionOferta: String = ""
+    @State private var fechaInicio: Date = Date()
+    @State private var fechaFin: Date = Date()
+
+    func guardarEnBaseDeDatos() {
+        // Aquí deberías implementar la lógica para guardar en tu base de datos.
+        // Por ahora, simplemente imprimiremos los valores.
+        print("Guardando en la base de datos...")
+        print("Oferta: \(oferta)")
+        print("Descripción: \(descripcionOferta)")
+        print("Fecha de inicio: \(fechaInicio)")
+        print("Fecha de fin: \(fechaFin)")
+    }
 
     var body: some View {
         ZStack {
@@ -30,32 +37,35 @@ struct OfertasDistribuidorView: View {
                     .frame(width: 150, height: 150)
                     .clipShape(Circle())
                     .padding(.bottom, 20)
-                List(0..<opcionesSeleccionadas.count, id: \.self) { index in
-                    Toggle(isOn: $opcionesSeleccionadas[index].seleccionada) {
-                        Text(opcionesSeleccionadas[index].nombre)
-                            .foregroundColor(.black)
+
+                VStack(spacing: 10) {
+                    TextField("Oferta", text: $oferta)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Descripción de la oferta", text: $descripcionOferta)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    DatePicker("Fecha de inicio", selection: $fechaInicio, displayedComponents: .date)
+                        .datePickerStyle(DefaultDatePickerStyle())
+                        .padding()
+                    
+                    DatePicker("Fecha de fin", selection: $fechaFin, displayedComponents: .date)
+                        .datePickerStyle(DefaultDatePickerStyle())
+                        .padding()
+                    
+                    Button(action: {
+                        // Llama a la función para guardar en la base de datos
+                        guardarEnBaseDeDatos()
+                    }) {
+                        Text("Confirmar")
+                            .foregroundColor(.white)
+                            .frame(width: 310)
+                            .padding(10)
+                            .background(Color.blue)
+                            .cornerRadius(10)
                     }
-                }
-                .listStyle(GroupedListStyle())
-                .padding(5)
-                Button(action: {
-                    // Procesa las selecciones del usuario aquí
-                    for opcion in opcionesSeleccionadas {
-                        if opcion.seleccionada {
-                            let opcionSeleccionada = opcion.nombre
-                            // Haz algo con la opción seleccionada, como imprimirla
-                            print("Opción seleccionada: \(opcionSeleccionada)")
-                        }
-                    }
-                }) {
-                    Text("Confirmar")
-                        .foregroundColor(.white)
-                        .frame(width: 310)
-                        .padding(10)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                .padding()
+                    .padding()
+                }.padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
             }
         }
     }
@@ -65,10 +75,4 @@ struct OfertasDistribuidorView_Previews: PreviewProvider {
     static var previews: some View {
         OfertasDistribuidorView()
     }
-}
-
-struct Opcion: Identifiable {
-    let id = UUID()
-    let nombre: String
-    var seleccionada: Bool
 }

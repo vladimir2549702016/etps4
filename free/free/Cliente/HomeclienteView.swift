@@ -11,6 +11,7 @@ struct HomeClienteView: View {
     @State private var isPreciosLinkActive = false
     @State private var isSucursalLinkActive = false
     @State private var isOfertasLinkActive = false
+    @State private var isShowingLogin = false
 
     var body: some View {
         NavigationView {
@@ -20,37 +21,37 @@ struct HomeClienteView: View {
 
                 VStack {
                     HStack {
-                        Text("Cliente")
+                        Text("MyGas")
                             .font(.title)
                             .padding(.leading)
-                            .colorInvert()
+                            .foregroundColor(.white)
                         Spacer()
                         Button(action: {
-                            // Agrega aquí la lógica para cerrar sesión
+                            isShowingLogin.toggle()
                         }) {
                             HStack {
-                                Text("Cerrar Sesión")
+                                Text("Iniciar sesión")
                                     .font(.subheadline)
                                 Image(systemName: "arrow.right.circle")
                             }
                             .padding()
+                            .foregroundColor(.white)
                         }
                     }
-                    .padding(.top, -80)
+                    .padding(.bottom, 60)
 
                     Image("mygas")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 150, height: 150)
                         .clipShape(Circle())
-                        .padding(.bottom, 20)
+                        .padding(.bottom, 40)
 
                     VStack {
                         NavigationLink(destination: PreciosClienteView(), isActive: $isPreciosLinkActive) {
                             EmptyView()
                         }
                         Button(action: {
-                            // Agrega aquí la lógica para la vista "Precios"
                             isPreciosLinkActive = true
                         }) {
                             HStack {
@@ -70,7 +71,6 @@ struct HomeClienteView: View {
                             EmptyView()
                         }
                         Button(action: {
-                            // Agrega aquí la lógica para la vista "Sucursal"
                             isSucursalLinkActive = true
                         }) {
                             HStack {
@@ -90,7 +90,6 @@ struct HomeClienteView: View {
                             EmptyView()
                         }
                         Button(action: {
-                            // Agrega aquí la lógica para la vista "Ofertas"
                             isOfertasLinkActive = true
                         }) {
                             HStack {
@@ -108,7 +107,11 @@ struct HomeClienteView: View {
                     }
                 }
             }
+            .fullScreenCover(isPresented: $isShowingLogin) {
+                LoginView()
+            }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

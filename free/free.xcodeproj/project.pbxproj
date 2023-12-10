@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB5C53902B07D0CA0067CBFD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5C538F2B07D0CA0067CBFD /* LoginView.swift */; };
 		EB77A27C2AEDFAEE00028A9A /* HomeclienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77A27B2AEDFAEE00028A9A /* HomeclienteView.swift */; };
 		EB77A27E2AEDFB8400028A9A /* PreciosclienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77A27D2AEDFB8400028A9A /* PreciosclienteView.swift */; };
 		EB77A2802AEDFBA000028A9A /* OfertasclienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB77A27F2AEDFBA000028A9A /* OfertasclienteView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB5C538F2B07D0CA0067CBFD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB77A27B2AEDFAEE00028A9A /* HomeclienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeclienteView.swift; sourceTree = "<group>"; };
 		EB77A27D2AEDFB8400028A9A /* PreciosclienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreciosclienteView.swift; sourceTree = "<group>"; };
 		EB77A27F2AEDFBA000028A9A /* OfertasclienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertasclienteView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				EB9C84B22AE4E33900082030 /* RegistroView.swift */,
 				EB9C848A2AE4D78F00082030 /* ContentView.swift */,
 				EB9C84882AE4D78F00082030 /* freeApp.swift */,
+				EB5C538F2B07D0CA0067CBFD /* LoginView.swift */,
 			);
 			path = Ingreso;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				EB77A28A2AEDFC5A00028A9A /* UbicaciondistribuidorView.swift in Sources */,
 				EB77A27C2AEDFAEE00028A9A /* HomeclienteView.swift in Sources */,
 				EB77A2882AEDFC3A00028A9A /* PreciosdistribuidorView.swift in Sources */,
+				EB5C53902B07D0CA0067CBFD /* LoginView.swift in Sources */,
 				EB9C84B32AE4E33900082030 /* RegistroView.swift in Sources */,
 				EB77A2842AEDFBDE00028A9A /* HomedistribuidorView.swift in Sources */,
 				EB77A2862AEDFC1D00028A9A /* OfertasdistribuidorView.swift in Sources */,

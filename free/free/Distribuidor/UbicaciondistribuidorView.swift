@@ -7,28 +7,22 @@
 import SwiftUI
 
 struct UbicacionDistribuidorView: View {
-    @State private var selectedGasolinera = "Gasolinera 1"
-    @State private var departamento = "San Salvador"
-    @State private var municipio = "San Salvador Centro"
-    @State private var distrito = "San Salvador"
-    @State private var calle = ""
+    @State private var selectedColonia = "Seleccione"
+    @State private var direccion = ""
     @State private var puntoDeReferencia = ""
 
-    let gasolineras = ["Seleccione", "Texaco", "Puma", "Uno"]
-    let departamentos = ["Seleccione", "San Salvador", "La Libertad", "Santa Ana"]
-    let municipios = ["Seleccione", "San Salvador Centro", "Santa Tecla", "Soyapango"]
-    let distritos = ["Seleccione", "Mejicanos", "San Salvador", "Soyapango"]
-
+    let colonias = ["Seleccione Colonia", "Colonia 1", "Colonia 2", "Colonia 3"]
+    
     var body: some View {
         ZStack {
             Color.black
-                .frame(maxWidth: .infinity)
                 .edgesIgnoringSafeArea(.all)
+            
             VStack {
                 Text("Detallar Ubicación")
                     .font(.largeTitle)
-                    .padding(.top, -30)
                     .foregroundColor(.white)
+                    .padding(.top, 20)
 
                 Image("mygas")
                     .resizable()
@@ -36,63 +30,47 @@ struct UbicacionDistribuidorView: View {
                     .frame(width: 150, height: 150)
                     .clipShape(Circle())
                     .padding(.bottom, 20)
-                VStack {
-                    TextField("Direccion", text: $calle)
+
+                VStack(spacing: 10) {
+                    TextField("Dirección", text: $direccion)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: 340)
-                        .padding(5)
+
                     TextField("Punto de Referencia", text: $puntoDeReferencia)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(width: 340)
-                        .padding(5)
-                    Picker("Gasolinera", selection: $selectedGasolinera) {
-                        ForEach(gasolineras, id: \.self) {
+
+                    Picker("Colonia", selection: $selectedColonia) {
+                        ForEach(colonias, id: \.self) {
                             Text($0)
                         }
                     }
                     .pickerStyle(MenuPickerStyle())
-                    .border(Color.black, width: 1)
-                    Picker("Departamento", selection: $departamento) {
-                        ForEach(departamentos, id: \.self) {
-                            Text($0)
-                        }
-                    }
-                    .pickerStyle(MenuPickerStyle())
-                    .border(Color.black, width: 2)
-                    Picker("Municipio", selection: $municipio) {
-                        ForEach(municipios, id: \.self) {
-                            Text($0)
-                        }
-                    }
-                    .pickerStyle(MenuPickerStyle())
-                    .border(Color.black, width: 2)
-                    Picker("Distrito", selection: $distrito) {
-                        ForEach(distritos, id: \.self) {
-                            Text($0)
-                        }
-                    }
-                    .pickerStyle(MenuPickerStyle())
-                    .border(Color.black, width: 2)
-                    
-                                        Button(action: {
-                        // Agregar lógica para guardar la información de ubicación en la base de datos
-                        // let ubicacion = UbicacionDistribuidor(gasolinera: selectedGasolinera, departamento: departamento, municipio: municipio, distrito: distrito, calle: calle, puntoDeReferencia: puntoDeReferencia)
-                        // Aquí deberías agregar el código para guardar la ubicación en tu base de datos.
+
+                    Button(action: {
+                        guardarEnBaseDeDatos()
                     }) {
                         Text("Guardar")
                             .foregroundColor(.white)
-                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .frame(maxWidth: .infinity)
                             .padding()
                             .background(Color.blue)
                             .cornerRadius(10)
                     }
-                    .padding(10)
-                    
+                    .padding(.top, 20)
                 }
-                .padding(1)
+                .padding()
                 .background(Color.white)
+                .cornerRadius(10)
             }
+            .padding()
         }
+    }
+
+    private func guardarEnBaseDeDatos() {
+        // Implementa la lógica para guardar los datos en la base de datos aquí
+        // Por ahora, simplemente imprime los valores seleccionados.
+        print("Colonia: \(selectedColonia)")
+        print("Dirección: \(direccion)")
+        print("Punto de Referencia: \(puntoDeReferencia)")
     }
 }
 

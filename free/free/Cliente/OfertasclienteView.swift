@@ -19,8 +19,6 @@ struct OfertasclienteView: View {
         Oferta(id: 1, nombre: "Texaco Tutunichapa", descripcion: "Acumulacion de puntos"),
         Oferta(id: 2, nombre: "Texaco 25 avenida", descripcion: "Acumulacion de puntos"),
         Oferta(id: 3, nombre: "Puma Los Heroes", descripcion: "Acumulacion de puntos"),
-        Oferta(id: 4, nombre: "Uno Juan Pablo ll", descripcion: "Autoservicio cash al costo"),
-        Oferta(id: 5, nombre: "Uno Los Heroes", descripcion: "Autoservicio"),
     ]
 
     var body: some View {
